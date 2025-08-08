@@ -1,0 +1,22 @@
+#vampiros{
+    background-color: blue;
+    width: 600px;
+    display: none;
+}
+#namorados{
+    background-color: blueviolet;
+    width: 600px;
+    display: none;
+}
+#assaltos{
+    background-color: rgb(100, 255, 10);
+    width: 600px;
+    display: none;
+}
+.quiz{
+    background-color: rgb(218, 96, 191);
+}
+.quizes{
+    display: flex;
+    width: 100%;
+}

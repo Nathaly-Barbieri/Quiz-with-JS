@@ -1,22 +1,24 @@
-#vampiros{
-    background-color: blue;
-    width: 600px;
-    display: none;
-}
-#namorados{
-    background-color: blueviolet;
-    width: 600px;
-    display: none;
-}
-#assaltos{
-    background-color: rgb(100, 255, 10);
-    width: 600px;
-    display: none;
-}
-.quiz{
-    background-color: rgb(218, 96, 191);
+body{
+    background-color: rgb(225, 140, 191);
 }
 .quizes{
     display: flex;
     width: 100%;
 }
+.quiz{
+    background-color: rgba(255, 255, 255, 0.2); 
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    width: 600px;
+    border-radius: 20px;
+    display: none;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+}
+.quiz img{
+    width: 200px;
+}
+
+

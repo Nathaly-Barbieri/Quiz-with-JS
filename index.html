@@ -7,6 +7,7 @@
     <script src="src/js/quiz.js"></script>
     <link rel="stylesheet" href="src/css/quiz.css">
 </head>
+
 <body>
      <div>
         <h1>Selecione o quiz que deseja realizar</h1>
@@ -21,10 +22,6 @@
                     <input type="radio" name="tipo_de_quiz" value="namorados"/>
                     <label for="namorados">Quiz para saber que tipo de namorada(o) você é</label>
                 </div>
-                 <div>
-                    <input type="radio" name="tipo_de_quiz" value="assaltos"/>
-                    <label for="assaltos">Quiz para saber a chance de você ser assaltado</label>
-                </div>
             </fieldset>
         </form>
 
@@ -34,54 +31,60 @@
             <div class="quiz" id="vampiros">
 
                 <h2>Quiz para saber se você é um vampiro</h2>
+                
+                <img src="src/images/quiz/vampire/vamp.jpg">
 
-                <form name="vamp_quiz" class="vamp_quiz">
+                <form class="vamp_quiz">
 
                     <h3>Você costuma sair no sol?</h3>
-                    <fieldset>  
+
+                    <fieldset name="vamp_quiz_q1">  
                         <div>
-                            <input type="radio" name="tipo_de_quiz" value="vampiros"/>
-                            <label for="vampiros">Sim</label>
+                            <input type="radio" name="vamp_quiz_q1" value="sim" checked/>
+                            <label for="vamp_quiz_q1">Sim</label>
                         </div>
                         <div>
-                            <input type="radio" name="tipo_de_quiz" value="namorados"/>
-                            <label for="namorados">Não</label>
+                            <input type="radio" name="vamp_quiz_q1" value="nao"/>
+                            <label for="vamp_quiz_q1">Não</label>
                         </div>
                         <div>
-                            <input type="radio" name="tipo_de_quiz" value="assaltos"/>
-                            <label for="assaltos">Só no final de tarde</label>
+                            <input type="radio" name="vamp_quiz_q1" value="fim_de_tarde"/>
+                            <label for="vamp_quiz_q1">Só no final de tarde</label>
                         </div>
                     </fieldset>
 
                     <h3>O que você sente quando vê uma cruz?</h3>
-                    <fieldset>  
+
+                    <fieldset name="vamp_quiz_q2">  
                         <div>
-                            <input type="radio" name="tipo_de_quiz" value="vampiros"/>
-                            <label for="vampiros">Asco ou medo</label>
+                            <input type="radio" name="vamp_quiz_q2" value="asco_ou_medo" checked/>
+                            <label for="vamp_quiz_q2">Asco ou medo</label>
                         </div>
                         <div>
-                            <input type="radio" name="tipo_de_quiz" value="namorados"/>
-                            <label for="namorados">Nada</label>
+                            <input type="radio" name="vamp_quiz_q2" value="nada"/>
+                            <label for="vamp_quiz_q2">Nada</label>
                         </div>
                         <div>
-                            <input type="radio" name="tipo_de_quiz" value="assaltos"/>
-                            <label for="assaltos">Me sinto em paz ou bem</label>
+                            <input type="radio" name="vamp_quiz_q2" value="paz_ou_bem"/>
+                            <label for="vamp_quiz_q2">Me sinto em paz ou bem</label>
                         </div>
                     </fieldset>
 
-                     <h3>O que você sente ao usar o sabonete Phebo de Verbena?</h3>
+                    <h3>O que você sente ao usar o sabonete Phebo de Verbena?</h3>
+
                     <fieldset>  
                         <div>
-                            <input type="radio" name="tipo_de_quiz" value="vampiros"/>
-                            <label for="vampiros">Tenho irritação ou alergia na pele</label>
+                            <input type="radio" name="vamp_quiz_q3" value="sim" checked/>
+                            <label for="vamp_quiz_q3">Tenho irritação ou alergia na pele</label>
                         </div>
                         <div>
-                            <input type="radio" name="tipo_de_quiz" value="namorados"/>
-                            <label for="namorados">Nada</label>
+                            <input type="radio" name="vamp_quiz_q3" value="nao"/>
+                            <label for="vamp_quiz_q3">Nada</label>
                         </div>
                     </fieldset>
 
                 </form>
+                <button onclick="">Próximo</button>
             </div>
 
             <div class="quiz" id="namorados">
@@ -91,124 +94,58 @@
                 <form name="bfgf_quiz" class="bfgf_quiz">
 
                     <h3>Quantas vezes por semana você costuma ir ver seu parceiro?</h3>
-                    <input type="number" name="bfgf_quiz" max="7" min="1"/>
+                    <input type="number" max="7" min="1"/>
 
                     <h3>Quantas vezes por mês costuma marcar dates seu parceiro?</h3>
-                    <input type="number" name="bfgf_quiz" max="1" min="31"/>
+                    <input type="number" max="1" min="31"/>
 
                     <h3>Você pensa em casar com seu parceiro?</h3>
                     
-                    <fieldset>  
+                    <fieldset name="bfgf_quiz_q1">  
                         <div>
-                            <input type="radio" name="tipo_de_quiz" value="vampiros"/>
-                            <label for="vampiros">Sim</label>
+                            <input type="radio" name="bfgf_quiz_marry_hmhr" value="sim" checked/>
+                            <label for="bfgf_quiz_q1">Sim</label>
                         </div>
                         <div>
-                            <input type="radio" name="tipo_de_quiz" value="namorados"/>
-                            <label for="namorados">Não</label>
+                            <input type="radio" name="bfgf_quiz_marry_hmhr" value="nao"/>
+                            <label for="bfgf_quiz_q1">Não</label>
                         </div>
                         <div>
-                            <input type="radio" name="tipo_de_quiz" value="assaltos"/>
-                            <label for="assaltos">Não sei</label>
+                            <input type="radio" name="bfgf_quiz_marry_hmhr" value="nao sei"/>
+                            <label for="bfgf_quiz_q1">Não sei</label>
                         </div>
                     </fieldset>
 
                     <h3>Você se sente atraido(a) fisicamente pelo seu parceiro?</h3>
                     
-                    <fieldset>  
+                    <fieldset name="bfgf_quiz_q2">  
                         <div>
-                            <input type="radio" name="tipo_de_quiz" value="vampiros"/>
-                            <label for="vampiros">Sim</label>
+                            <input type="radio" name="bfgf_quiz_q2" value="sim" checked/>
+                            <label for="bfgf_quiz_q2">Sim</label>
                         </div>
                         <div>
-                            <input type="radio" name="tipo_de_quiz" value="namorados"/>
-                            <label for="namorados">Não</label>
+                            <input type="radio" name="bfgf_quiz_q2" value="nao"/>
+                            <label for="bfgf_quiz_q2">Não</label>
                         </div>
                     </fieldset>
 
                     <h3>Se o seu parceiro fosse uma barata, você continuaria o amando?</h3>
                     
-                    <fieldset>  
+                    <fieldset name="bfgf_quiz_q3">  
                         <div>
-                            <input type="radio" name="tipo_de_quiz" value="vampiros"/>
-                            <label for="vampiros">Sim</label>
+                            <input type="radio" name="bfgf_quiz_q3" value="sim" checked/>
+                            <label for="bfgf_quiz_q3">Sim</label>
                         </div>
                         <div>
-                            <input type="radio" name="tipo_de_quiz" value="namorados"/>
-                            <label for="namorados">Não</label>
+                            <input type="radio" name="bfgf_quiz_q3" value="nao"/>
+                            <label for="bfgf_quiz_q3">Não</label>
                         </div>
                     </fieldset>
                 </form>
-            </div>
-            <div class="quiz" id="assaltos">
-                <h2>Quiz para saber a chance de você ser assaltado</h2>
-
-                  <h3>Você costuma sair sozinho(a) de noite?</h3>
-                    
-                    <fieldset>  
-                        <div>
-                            <input type="radio" name="tipo_de_quiz" value="vampiros"/>
-                            <label for="vampiros">Sim</label>
-                        </div>
-                        <div>
-                            <input type="radio" name="tipo_de_quiz" value="namorados"/>
-                            <label for="namorados">Não</label>
-                        </div>
-                    </fieldset>
-
-                    <h3>Seu celular ou sua carteira ficam expostos?</h3>
-                    
-                    <fieldset>  
-                        <div>
-                            <input type="radio" name="tipo_de_quiz" value="vampiros"/>
-                            <label for="vampiros">Sim</label>
-                        </div>
-                        <div>
-                            <input type="radio" name="tipo_de_quiz" value="namorados"/>
-                            <label for="namorados">Não</label>
-                        </div>
-                    </fieldset>
-
-                    <h3>Seu celular ou sua carteira possuem cor chamativa ou neon?</h3>
-                    
-                    <fieldset>  
-                        <div>
-                            <input type="radio" name="tipo_de_quiz" value="vampiros"/>
-                            <label for="vampiros">Sim</label>
-                        </div>
-                        <div>
-                            <input type="radio" name="tipo_de_quiz" value="namorados"/>
-                            <label for="namorados">Não</label>
-                        </div>
-                    </fieldset>
-
-                    <h3>Seu celular ou sua carteira ficam expostos?</h3>
-                    
-                    <fieldset>  
-                        <div>
-                            <input type="radio" name="tipo_de_quiz" value="vampiros"/>
-                            <label for="vampiros">Sim</label>
-                        </div>
-                        <div>
-                            <input type="radio" name="tipo_de_quiz" value="namorados"/>
-                            <label for="namorados">Não</label>
-                        </div>
-                    </fieldset>
-
-                    <h3>Você se considera uma pessoa distraida?</h3>
-                    
-                    <fieldset>  
-                        <div>
-                            <input type="radio" name="tipo_de_quiz" value="vampiros"/>
-                            <label for="vampiros">Sim</label>
-                        </div>
-                        <div>
-                            <input type="radio" name="tipo_de_quiz" value="namorados"/>
-                            <label for="namorados">Não</label>
-                        </div>
-                    </fieldset>
+                <button onclick="">Próximo</button>
             </div>
         </div>
     </div>
 </body>
+
 </html>

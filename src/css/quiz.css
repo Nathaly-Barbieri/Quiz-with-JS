@@ -1,5 +1,6 @@
 body{
     background-color: rgb(225, 140, 191);
+    font-family: Arial, Helvetica, sans-serif;
 }
 .quizes{
     display: flex;
